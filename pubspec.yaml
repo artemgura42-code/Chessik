@@ -9,7 +9,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  device_screenshot: ^0.0.8       # Захват экрана
   flutter_chess_board: ^1.0.1     # Доска и стрелки
   multistockfish: ^0.7.0          # Stockfish 19
   tflite_flutter: ^0.10.4        # Для модели YOLO
