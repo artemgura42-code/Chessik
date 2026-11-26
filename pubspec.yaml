@@ -1,0 +1,22 @@
+name: chess_screen_assistant
+description: Учебный проект по распознаванию шахматной доски с экрана.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  device_screenshot: ^0.0.8       # Захват экрана
+  flutter_chess_board: ^1.0.1     # Доска и стрелки
+  multistockfish: ^0.7.0          # Stockfish 19
+  tflite_flutter: ^0.10.4        # Для модели YOLO
+  opencv_dart: ^0.1.0             # Или другой OpenCV пакет для Dart
+  path_provider: ^2.1.0          # Для доступа к файлам
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/models/chess_piece_detector.tflite # Сюда положите модель
